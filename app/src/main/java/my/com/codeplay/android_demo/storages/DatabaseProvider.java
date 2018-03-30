@@ -30,14 +30,14 @@ import android.support.annotation.Nullable;
 import java.io.File;
 
 import my.com.codeplay.android_demo.data.Dummy;
-
+//ingore extends content provider til 115
 public class DatabaseProvider extends ContentProvider {
     public static final String TABLENAME = "tablename";
     public static final String COL_NAME = "t_name";
     public static final String COL_IMAGE = "t_image";
 
     private static final String SQL_CREATE_TABLE = "CREATE TABLE " + TABLENAME + " (" +
-            BaseColumns._ID + " integer primary key autoincrement, " +
+            BaseColumns._ID + " integer primary key autoincrement, " + //if need use adapter for recycle need ID
             COL_NAME + " text not null, " +
             COL_IMAGE + " integer not null);";
     private MySQLiteOpenHelper dbHelper;
@@ -112,7 +112,7 @@ public class DatabaseProvider extends ContentProvider {
         if (dbHelper!=null)
             dbHelper.close();
     }
-
+// start from here til end , database manage by loader manager api11
     /**
      * Implementation of Content Provider
      */

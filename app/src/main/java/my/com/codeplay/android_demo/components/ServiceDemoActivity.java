@@ -29,7 +29,7 @@ import android.widget.TextView;
 import java.util.concurrent.TimeUnit;
 
 import my.com.codeplay.android_demo.R;
-
+//activity --android default
 public class ServiceDemoActivity extends AppCompatActivity {
     private TextView tvTime;
     private Runnable run = new Runnable() {

@@ -12,7 +12,7 @@
  * either express or implied. See the License for the specific language governing permissions
  * and limitations under the License.
  */
-
+//this use content provider, not need use cursor
 package my.com.codeplay.android_demo.storages;
 
 import android.database.Cursor;
